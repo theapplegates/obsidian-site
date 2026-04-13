@@ -1,5 +1,5 @@
 {
-  "projectRoot": "../..",
+  "projectRoot": ".",
   "configFilePath": "../config.ts",
   "contentTypes": [
     {
@@ -57,7 +57,7 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nlastModified: {{date}}\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: true\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n"
     },
     "pages-1765432337485": {
       "titleProperty": "title",
@@ -65,7 +65,7 @@
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: true\naliases: []\n---\n"
     },
     "posts-1765432337485": {
       "titleProperty": "title",
@@ -76,7 +76,7 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: true\naliases: []\n---\n"
     },
     "content-1765432392567": {
       "titleProperty": "title",
@@ -86,13 +86,13 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ndate: {{date}}\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: true\naliases: []\n---\n"
     },
     "content-type-1769839757487-w482ctdm8": {
       "titleProperty": "title",
       "descriptionProperty": "description",
       "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nhideTOC: false\n---\n"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -100,7 +100,7 @@
   "presetName": "",
   "presetsRepo": "davidvkimball/vault-cms-presets",
   "enableEditingToolbar": false,
-  "enableExtendedFileTypes": false,
+  "enableExtendedFileTypes": true,
   "enabledPlugins": [
     "astro-composer",
     "bases-cms",
@@ -115,7 +115,9 @@
     "iconic",
     "settings-search",
     "tag-wrangler",
-    "zenmode"
+    "zenmode",
+    "file-name-history",
+    "omnisearch"
   ],
   "disabledPlugins": [],
   "theme": "",
@@ -287,8 +289,8 @@
   },
   "explorerFocus": {},
   "ignoreConfig": {
-    "gitIgnoreConfigured": true,
-    "viteIgnoreConfigured": true
+    "gitIgnoreConfigured": false,
+    "viteIgnoreConfigured": false
   },
   "gitConfig": {
     "enabled": false,
@@ -296,8 +298,10 @@
     "branchName": "main",
     "autoConfigureObsidianGit": true
   },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
   "runWizardOnStartup": false,
   "wizardCompleted": true,
-  "enableMdxSupport": false,
+  "enableMdxSupport": true,
   "defaultContentTypeId": "posts-1765432337485"
 }

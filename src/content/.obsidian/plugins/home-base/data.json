@@ -6,7 +6,7 @@
   "openMode": "replace-all",
   "manualOpenMode": "retain",
   "replaceNewTab": false,
-  "newTabMode": "always",
+  "newTabMode": "only-when-empty",
   "openWhenAllTabsClosed": false,
   "useDifferentFileForNewTab": false,
   "newTabType": "File",
@@ -28,5 +28,8 @@
   "autoScroll": false,
   "hideReleaseNotes": false,
   "openWhenEmpty": false,
-  "stickyIconReplaceTab": false
+  "stickyIconReplaceTab": false,
+  "homeBasePath": "bases/Home.base",
+  "keepExistingTabs": false,
+  "mobileHomeBasePath": ""
 }

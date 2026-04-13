@@ -3,7 +3,6 @@
   "enableForLinking": true,
   "enableForQuickSwitcher": true,
   "includeFilenameInSearch": true,
-  "includeFolderNameInSearch": true,
   "includeAliasesInSearch": true,
   "enableForDragDrop": true,
   "useSimpleSearch": false,
@@ -14,7 +13,8 @@
   "folderNoteFilename": "index",
   "enableForWindowFrame": true,
   "enableForBookmarks": true,
-  "enableMdxSupport": false,
+  "enableMdxSupport": true,
   "quickSwitcherExcludedBehavior": "deemphasize",
-  "linkSuggesterExcludedBehavior": "deemphasize"
+  "linkSuggesterExcludedBehavior": "deemphasize",
+  "includeFolderNameInSearch": true
 }
